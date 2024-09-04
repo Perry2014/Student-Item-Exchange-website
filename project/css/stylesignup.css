@@ -1,0 +1,147 @@
+* {
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  /* background: radial-gradient(rgb(0, 166, 232), rgb(190, 216, 227)); */
+  background-image: url("../images/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  /* box-sizing: border-box; */
+  /* border: 1px solid aliceblue; */
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  /* padding-left: 22rem;
+  padding-top: 7rem; */
+}
+
+.box1 {
+  padding: 1rem;
+}
+
+.message {
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+
+.emailtext {
+  font-size: 1.5rem;
+}
+#email {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+
+.mobilenumtext {
+  font-size: 1.5rem;
+}
+
+#mobile_number {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
+
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+
+.nametext {
+  font-size: 1.5rem;
+}
+
+#name {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
+
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+
+.usernametext {
+  font-size: 1.5rem;
+}
+
+#username {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
+
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+.passwordtext {
+  font-size: 1.5rem;
+}
+
+#password {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
+
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+
+.repasswordtext {
+  font-size: 1.5rem;
+}
+
+#repassword {
+  font-size: 1.5rem;
+  height: 2rem;
+
+  color: black;
+
+  border-radius: 8px;
+  background-color: rgb(234, 217, 217);
+}
+
+.submit {
+  height: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  padding: 10px 10px 25px 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+  body {
+    background-image: url("../images/background6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /* background-color: red; */
+  }
+  .message {
+    padding-top: 15rem;
+    font-size: 2rem;
+  }
+}
+
+
+
+.submit:hover{
+  font-size: 1.5rem;
+  height: 3rem;
+}

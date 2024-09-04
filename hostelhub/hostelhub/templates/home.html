@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/stylehome.css' %}" />
+  </head>
+  <body>
+    <header>
+      <nav class="navig">
+        <h1 class="title">Hostel Hub</h1>
+        <!-- <div class="menu hidden">
+          <div class="dash"></div>
+          <div class="dash"></div>
+          <div class="dash"></div>
+          <ol class="nav_ol">
+            <li class="login">
+              <a class="logina" href="login.html">Login</a>
+            </li>
+            <li class="signup">
+              <a class="signupa" href="signup.html">Sign Up</a>
+            </li>
+          </ol>
+        </div> -->
+        <!-- <ol class="nav_ol">
+          <li class="login hidden">
+            <a class="logina" href="login.html">Login</a>
+          </li>
+          <li class="signup hidden">
+            <a class="signupa" href="signup.html">Sign Up</a>
+          </li>
+        </ol> -->
+        <button class="stacklines hiddenlaptop">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </nav>
+      <span class="boxlogin hidden">
+        <!-- <li>login</li>
+        <li>signup</li> -->
+        <li><a class="logina" href="{% url 'login' %}">Login</a></li>
+        <li><a class="signupa" href="{% url 'signup' %}">Sign Up</a></li>
+      </span>
+    </header>
+    <main>
+      <!-- <marquee class="marquee" behavior="scroll" direction="left"
+        >Vintage pages & pedals MarketPlace</marquee -->
+      >
+      <div class="container">
+        {% for item in items %}
+        <div class="books">
+          <div class="images">
+            <img src="{{item.image}}" alt="Image" width="200rem" />
+          </div>
+          <div class="name">{{item.name}}</div>
+          <div class="viewmore">
+            <a href="{% url 'login' %}">View Details</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+    <div class="empty"></div>
+
+    <footer>
+      <p class="copyright">copyright &copy; nitap</p>
+    </footer>
+    <!-- <div class="overlay hidden"></div> -->
+  </body>
+  <script src="{%static 'js/scripthome.js' %}"></script>
+</html>

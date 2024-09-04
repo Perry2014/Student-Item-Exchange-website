@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item</title>
+    <link rel="stylesheet" href="{% static 'css/styleadditem.css' %}" />
+  </head>
+  <body>
+    <h1>Add your item...</h1>
+    <form action="additem" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <div class="container">
+        <label for="name" class="nametext">Name of the Product</label>
+        <input type="text" name="name" class="name" placeholder="name" />
+        <label for="descripton" class="descriptiontext">Descripton</label>
+        <input
+          type="text"
+          name="description"
+          class="description"
+          placeholder="description"
+        />
+        <label for="price" class="pricetext">Price</label>
+        <input type="text" name="price" class="price" placeholder="price" />
+        <label for="image" class="imagetext">Upload an image</label>
+        <input type="file" name="image" class="image" />
+        <input type="submit" class="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>

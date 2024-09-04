@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homeafterlogin</title>
+    <link rel="stylesheet" href="{% static 'css/stylehomeafterlogin.css' %}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="title">Hostel Hub</h1>
+        <div class="hiName">Hi,{{name}}</div>
+        <!-- <ol class="nav_ol">
+          <li class="name">Hi name</li>
+          <li class="signup"><a class="signupa" href="home.html">Logout</a></li>
+        </ol>
+      </nav> -->
+        <button class="stacklines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </nav>
+      <span class="boxlogin hidden">
+        <!-- <li>login</li>
+      <li>signup</li> -->
+        <li><a class="additem" href="{% url 'profile1' %}">Profile</a></li>
+        <li><a class="signupa" href="{% url 'home' %}">Log out</a></li>
+      </span>
+    </header>
+    <main>
+      <marquee class="marquee" behavior="scroll" direction="left"
+        >Vintage pages & pedals MarketPlace</marquee
+      >
+      <div class="container">
+        {% for item in items %}
+        <div class="books">
+          <div class="images">
+            <img src="{{item.image}}" alt="Image" width="200rem" />
+          </div>
+          <div class="name">{{item.name}}</div>
+          <div class="viewmore">
+            <a href="{% url 'product' item.id %}">View Details</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+    <div class="empty"></div>
+    <footer>
+      <p class="copyright">copyright &copy; nitap</p>
+    </footer>
+  </body>
+  <script src="{% static 'js/scripthomeafterlogin.js' %}"></script>
+</html>

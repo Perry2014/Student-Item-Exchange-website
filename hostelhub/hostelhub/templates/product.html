@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="{% static 'css/styleproduct.css' %}" />
+  </head>
+  <body>
+    <header>
+      <nav class="navig">
+        <h1 class="title">
+          <a class="titlea" href="{% url 'homeafterlogin' %}">Hostel Hub</a>
+        </h1>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="image">
+          <img src="{{ item.image }}" alt="{{ item.name }}" height="500rem" />
+        </div>
+        <div class="information">
+          <div class="productname">
+            <p class="productname1">Product name:</p>
+            <p class="productname2">{{ item.name }}</p>
+          </div>
+          <hr />
+          <div class="description">
+            <p class="description1">Description:</p>
+            <p class="description2">{{ item.description }}</p>
+            <hr />
+          </div>
+          <div class="price">
+            <p class="price1">Price:</p>
+            <p class="price2">{{ item.price }}/-</p>
+          </div>
+          <hr />
+          <div class="sellermobile">
+            <p class="sellermobile1">Seller Mobile Number:</p>
+            <p class="sellermobile2">{{ item.sellermobileNum }}</p>
+          </div>
+          <hr />
+          <div class="sellername">
+            <p class="sellername1">Seller Name:</p>
+            <p class="sellername2">{{ item.sellername }}</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </main>
+    <div class="empty"></div>
+    <footer>
+      <p class="copyright">copyright &copy; nitap</p>
+    </footer>
+  </body>
+</html>

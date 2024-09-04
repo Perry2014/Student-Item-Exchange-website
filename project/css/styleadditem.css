@@ -1,0 +1,102 @@
+* {
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+body {
+  /* height: 100vh;
+    position: fixed;
+    /* background: radial-gradient(rgb(0, 166, 232), rgb(190, 216, 227)); */
+  /* background-image: url("images/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+  height: 100vh;
+  /* background: radial-gradient(rgb(0, 166, 232), rgb(190, 216, 227)); */
+  background-image: url("../images/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem; */
+}
+
+.nametext,
+.descriptiontext,
+.pricetext,
+.imagetext {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.name,
+.description,
+.price {
+  font-size: 1.5rem;
+  height:2rem;
+  border-radius: 8px;
+  color: black;
+  background-color: rgb(234, 217, 217);
+}
+
+/* .image {
+  padding-left: 2rem;
+} */
+
+/* .name,
+.price,
+.image {
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  height: 5rem;
+} */
+
+.submit {
+  height: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  padding: 10px 10px 25px 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 1300px) {
+  body {
+    background-image: url("../images/background6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /* background-color: red; */
+  }
+}
+
+.submit:hover{
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
+.image{
+  padding-left:5rem;
+}

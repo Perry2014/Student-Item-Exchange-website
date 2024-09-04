@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete item</title>
+    <link rel="stylesheet" href="{% static 'css/styledeleteitem.css' %}" />
+  </head>
+  <body>
+    <h1>Enter to delete item...</h1>
+    <form action="deleteitem" method="post">
+      {% csrf_token %}
+
+      <div class="container">
+        <label for="id" class="idtext">Product Id</label>
+        <input type="number" name="id" class="id" />
+        <label for="name" class="nametext">Name of the Product</label>
+        <input type="text" name="name" class="name" />
+        <input type="submit" class="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>

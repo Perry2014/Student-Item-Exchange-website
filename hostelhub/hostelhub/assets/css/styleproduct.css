@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Lobster&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+body {
+  background-image: url("../images/background2.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgb(1, 1, 75);
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 5;
+  border: 1px solid whitesmoke;
+}
+
+.title {
+  position: relative;
+  left: 5rem;
+  font-size: 3rem;
+  /* font-family: "Lobster", sans-serif;
+    font-weight: 200;
+    font-style: normal; */
+  font-family: "Kalnia", serif;
+  /* font-family: "Shantell Sans", cursive; */
+  font-weight: 500;
+}
+
+.titlea {
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  position: relative;
+  top: 15rem;
+  /* justify-content: center;
+  align-items: center; */
+  /* padding-left: 5rem; */
+}
+
+.information {
+  padding-left: 5rem;
+  position: relative;
+  bottom: 2rem;
+}
+
+.description {
+  max-height: 13rem;
+  overflow: auto;
+}
+
+.productname1,
+.description1,
+.price1,
+.sellermobile1,
+.sellername1 {
+  font-size: 2rem;
+}
+
+.productname2,
+.description2,
+.price2,
+.sellermobile2,
+.sellername2 {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.empty {
+  padding: 10rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(1, 1, 75);
+
+  width: 100%;
+  height: 2.7rem;
+  border: 1px solid whitesmoke;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  body {
+    background-image: url("../images/background5.avif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  img {
+    width: 50%;
+    height: auto;
+  }
+  .image {
+    text-align: center;
+  }
+  .information {
+    padding-top: 2rem;
+    padding-left: 0.1rem;
+  }
+}
